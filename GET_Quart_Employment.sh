@@ -9,5 +9,5 @@
 
 #https://data.bls.gov/cew/data/files/2018/csv/2018_qtrly_singlefile.zip
 for i in {1990..2018}; do echo "https://data.bls.gov/cew/data/files/$i/csv/""$i""_qtrly_singlefile.zip";
-wget "https://data.bls.gov/cew/data/files/$i/xls/""$i""_qtrly_singlefile.zip"; 
+wget "https://data.bls.gov/cew/data/files/$i/csv/""$i""_qtrly_singlefile.zip"; 
 unzip "$i""_qtrly_singlefile.zip"; rm "$i""_qtrly_singlefile.zip"; done
